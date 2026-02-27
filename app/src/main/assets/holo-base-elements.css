@@ -1,0 +1,101 @@
+/* Base Holo styles for elements
+ * Part of the Holo Web CSS library
+ *
+ * Copyright 2012-2015 Zachary Yaro
+ * Released under the MIT license
+ * http://holo.zmyaro.com/LICENSE.txt
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+
+::selection {
+	background-color: #33B5E5;
+	background-color: rgba(51, 181, 229, 0.5);
+}
+::-moz-selection {
+	background-color: #33B5E5;
+	background-color: rgba(51, 181, 229, 0.5);
+}
+
+body {
+	font-family: Roboto, "Droid Sans", sans-serif;
+	margin: 0;
+	padding-top: 16px;
+}
+body:before { /* This is used for the background gradient */
+	z-index: -1000;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+a {
+	color: #33B5E5;
+}
+
+
+
+
+
+input[type="radio"], input[type="checkbox"], select:not([size]), select[size="1"],
+input[type="range"], input[type="range"]::-webkit-slider-thumb  {
+	-webkit-appearance: none;
+	     -o-appearance: none;
+	        appearance: none;
+}
+
+
+
+select:not([size]), select[size="1"] {	
+	background-color: transparent;
+	border-width: 0 0 1px 0;
+}
+select::-ms-expand { /* Drop-down arrow in IE */
+	display: none;
+}
+
+
+
+progress::-webkit-progress-bar-value, progress::-webkit-progress-value {
+	position: relative;
+	overflow: visible;
+}
+progress::-moz-progress-bar {
+	position: relative;
+	overflow: visible;
+}
+progress::-ms-fill {
+	position: relative;
+	overflow: visible;
+}
+progress::-webkit-progress-bar-value:after, progress::-webkit-progress-value:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 10px;
+	height: 2px;
+}
+progress::-moz-progress-bar:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 10px;
+	height: 2px;
+}
+progress::-ms-fill {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 10px;
+	height: 2px;
+}
+
+*:disabled {
+	opacity: 0.3;
+}

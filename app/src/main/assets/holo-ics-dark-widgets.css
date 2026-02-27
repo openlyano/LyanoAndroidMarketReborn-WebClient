@@ -1,0 +1,46 @@
+/* Ice Cream Sandwich Holo Dark styles for widgets
+ * Part of the Holo Web CSS library
+ *
+ * Copyright 2012-2015 Zachary Yaro
+ * Released under the MIT license
+ * http://holo.zmyaro.com/LICENSE.txt
+ */
+
+.actionBar, .holo-actionBar {
+	background-color: #010101;
+	
+	border-top-color: #0F0F0F;
+	border-bottom-color: #33B5E5;
+}
+footer.actionBar, footer.holo-actionBar {
+	background-color: #262B31;
+	
+	border-top-color: #505359;
+}
+
+.actionBar .holo-title.holo-up, .holo-actionBar .holo-title.holo-up {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAJdnBBZwAAABAAAAAQAFzGrcMAAADaSURBVCjPddG9SkNBFATgb5drCAhiYRUs7BQsRDCtQfIevppP4k/KgIUgiJYWEQtLxT/uXYu9N9lIMtVh9pyZYTZokbqhJ4q+1QRUFgiSbee2vLroyKq4D5JTu2pTtRgaiMVzY+BY7cG9oMmmUYkzfZ8uSyrmY0Gy70Bw60WUcsSFRRKM9LyZZCKUCiKG9vy68pHvlyzaKZR1LC80mHq2YWxTM9f/F/LGjx2jTKRyoQ356ElyYpA1VvVw7UvfeFUPJNHMncqhI0kMpULoGp+YeTdUdVXP86777j8ScUEXuCRR/QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMS0wNy0wMVQxMzoxMDoyNS0wNzowMDPfgNMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTEtMDctMDFUMTM6MTA6MjUtMDc6MDBCgjhvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==);
+}
+
+.holo-list li {
+	border-color: #262626;
+	border-color: rgba(255, 255, 255, 0.15);
+}
+	.holo-list li button:focus,
+	.holo-list li *[role="button"]:focus{
+		background-color: #0F3645;
+		background-color: rgba(51, 181, 229, 0.31);
+		-webkit-box-shadow: inset 0 0 0 2px rgba(51, 181, 229, 0.42);
+		   -moz-box-shadow: inset 0 0 0 2px rgba(51, 181, 229, 0.42);
+		        box-shadow: inset 0 0 0 2px rgba(51, 181, 229, 0.42);
+	}
+	.holo-list li button:enabled:active,
+	.holo-list li *[role="button"]:active,
+	.holo-list li button:enabled.active,
+	.holo-list li *[role="button"].active {
+		background-color: #1E6C89;
+		background-color: rgba(51, 181, 229, 0.6);
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none;
+	}
